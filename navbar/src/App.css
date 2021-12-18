@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-container {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  box-shadow: 0px 2px 21px -2px rgba(0, 0, 0, 0.73);
+}
+
+.nav-logo {
+  height: 70px;
+  width: 70px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1.8rem;
+  width: 680px;
+}
+
+.nav-links > li {
+  padding: 0.8rem;
+  margin-right: 0.4rem;
+  margin-left: 0.4rem;
+  transition: 0.4s all;
+}
+
+.nav-links > li:hover {
+  border-bottom: 3px solid rgb(150, 255, 165);
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-links > li {
+  padding: 0.5rem;
+  margin-right: 0.4rem;
+  margin-left: 0.4rem;
+  font-size: 1.8rem;
+}
+
+.facebook-icon:hover {
+  color: blue;
+}
+.twitter-icon:hover {
+  color: rgb(0, 157, 255);
+}
+.github-icon:hover {
+  color: rgb(0, 183, 12);
+}
+.ham-icon {
+  position: fixed;
+  top: 24px;
+  right: 12px;
+  font-size: 2.5rem;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.3s ease-in, visibility, 0.3s ease-in;
+}
+
+@media (max-width: 990px) {
+  .nav-container {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    box-shadow: none;
+  }
+
+  .nav-links {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+    box-shadow: 0px 16px 16px -9px rgba(0, 0, 0, 0.66);
+    margin: 0;
+  }
+
+  .social-links > li {
+    display: none;
+  }
+
+  .ham-icon {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .nav-links > li {
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .nav-links > li:hover {
+    background-color: rgb(150, 255, 165);
+  }
+}

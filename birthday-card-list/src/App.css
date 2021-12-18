@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Architects+Daughter&family=Changa:wght@300&family=Gloria+Hallelujah&family=Outfit:wght@300&family=Poiret+One&family=Raleway:wght@100;200;300;500&family=Rubik:ital,wght@1,300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poiret One", cursive;
+}
+
+#main-container {
+  display: flex;
+  min-height: 100vh;
+  max-height: fit-content;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 241, 119, 0.786);
+}
+
+.container {
+  width: 70vw;
+  max-width: 500px;
+  margin: 4rem;
+  background-color: rgb(255, 255, 255);
+  padding: 3rem;
+}
+
+.container > h3 {
+  font-size: 2.4rem;
+  padding: 0rem 0rem 2rem 1rem;
+}
+
+.person {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 0.2rem;
+}
+
+.person img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: var(--light-shadow);
+}
+
+.person h4 {
+  font-size: 1.2remrem;
+  margin-bottom: 0.3rem;
+}
+
+.container button {
+  width: 90%;
+  margin: 0% 5% 0% 5%;
+  height: 50px;
+  border-radius: 0.25rem;
+  border: none;
+  text-align: center;
+  background-color: rgb(255, 31, 31);
+  color: white;
+  font-size: 1.4rem;
+  box-shadow: 6px 7px 6px -4px #000000;
+}
+
+.container button:hover {
+  box-shadow: 6px 7px 12px -4px #000000;
+}
+@media (max-width: 400px) {
+  .container {
+    min-width: 96vw;
+  }
+
+  .container > h3 {
+    font-size: 1.9rem;
+    padding: 0rem 0rem 2rem 1rem;
+  }
+}
